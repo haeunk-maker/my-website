@@ -1,1 +1,131 @@
-# my-website
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Haeun | Personal Page</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #fff0f5);
+            margin: 0;
+            padding: 40px 20px;
+            color: #444;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /* 프로필 이미지 */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ffb6c1;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            color: #d63384;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #d63384;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-link {
+            display: block;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            background: #ffb6c1;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #ff8fab;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- 사진 넣는 부분 (파일 이름 바꿔서 사용) -->
+            <img src="profile.jpg" alt="profile" class="profile-img">
+
+            <h1>Kim Haeun</h1>
+            <p class="subtitle">Media Communication Student</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                안녕하세요? 저는 숙명여자대학교 미디어학부와 경영학과 전공 김하은입니다.
+                영상 제작과 기획에 관심이 있으며, 다양한 콘텐츠를 만드는 것을 좋아합니다.
+                쉬는 시간에는 수영을 즐깁니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>Connect With Me</h2>
+            <div class="links-container">
+                <a href="https://www.youtube.com/@lovehandyou" class="social-link" target="_blank">YouTube</a>
+                <a href="https://blog.naver.com/lovehandyou" class="social-link" target="_blank">Blog</a>
+                <a href="https://www.instagram.com/yvlvsyu/" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Kim Haeun</p>
+        </footer>
+    </div>
+</body>
+</html>
