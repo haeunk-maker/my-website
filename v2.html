@@ -27,7 +27,6 @@
             text-align: center;
         }
 
-        /* 프로필 이미지 */
         .profile-img {
             width: 130px;
             height: 130px;
@@ -48,7 +47,7 @@
         }
 
         section {
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         h2 {
@@ -59,6 +58,22 @@
 
         p {
             line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        /* Skills 태그 스타일 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: #ffe4ec;
+            color: #d63384;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
         }
 
         .links-container {
@@ -98,22 +113,48 @@
 <body>
     <div class="container">
         <header>
-            <!-- 사진 넣는 부분 (파일 이름 바꿔서 사용) -->
             <img src="profile.jpg" alt="profile" class="profile-img">
-
             <h1>Kim Haeun</h1>
-            <p class="subtitle">Media Communication Student</p>
+            <p class="subtitle">콘텐츠를 기획하고 기록하는 미디어 전공자</p>
         </header>
 
+        <!-- About -->
         <section>
             <h2>About Me</h2>
             <p>
-                안녕하세요? 저는 숙명여자대학교 미디어학부와 경영학과 전공 김하은입니다.
-                영상 제작과 기획에 관심이 있으며, 다양한 콘텐츠를 만드는 것을 좋아합니다.
-                쉬는 시간에는 수영을 즐깁니다.
+                안녕하세요. 숙명여자대학교 미디어학부와 경영학과를 전공하고 있는 김하은입니다.
+                영상 제작과 콘텐츠 기획에 관심이 있으며, 다양한 플랫폼에서 콘텐츠를 기획하고 기록하는 것을 좋아합니다.
+                블로그를 통해 꾸준히 뉴스와 생각을 정리해 왔습니다.
             </p>
         </section>
 
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">영상 편집</div>
+                <div class="skill">콘텐츠 기획</div>
+                <div class="skill">스토리텔링</div>
+                <div class="skill">블로그 운영</div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <p>• SM-net 앵커 및 영상 제작 활동</p>
+            <p>• 방송반 국장 (고등학교)</p>
+            <p>• 연구관리팀 행정 인턴 (문서 및 공고 정리)</p>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <p>• 블로그 뉴스 스크랩 및 의견 정리 (10년 이상 운영)</p>
+            <p>• 방송영상 제작 팀 프로젝트 수행</p>
+        </section>
+
+        <!-- Links -->
         <section>
             <h2>Connect With Me</h2>
             <div class="links-container">
